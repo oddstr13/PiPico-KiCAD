@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Pico
+D The Raspberry Pi Pico is a microcontroller board based on the Raspberry Pi RP2040 microcontroller chip
+K raspberry,pi,pico,module, cortex M0+
+F https://datasheets.raspberrypi.org/pico/pico-datasheet.pdf
+$ENDCMP
+#
+#End Doc Library
