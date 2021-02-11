@@ -1,4 +1,223 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+NoConn ~ 3400 1300
+NoConn ~ 3500 1300
+NoConn ~ 3600 1300
+NoConn ~ 3900 1300
+NoConn ~ 4000 1300
+NoConn ~ 4100 1300
+$Comp
+L power:+5V #PWR01
+U 1 1 6025C82D
+P 4800 1550
+F 0 "#PWR01" H 4800 1400 50  0001 C CNN
+F 1 "+5V" H 4815 1723 50  0000 C CNN
+F 2 "" H 4800 1550 50  0001 C CNN
+F 3 "" H 4800 1550 50  0001 C CNN
+	1    4800 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1550 4800 1700
+Wire Wire Line
+	4800 1700 4600 1700
+$Comp
+L power:GND #PWR02
+U 1 1 6025DB2B
+P 5000 2000
+F 0 "#PWR02" H 5000 1750 50  0001 C CNN
+F 1 "GND" H 5005 1827 50  0000 C CNN
+F 2 "" H 5000 2000 50  0001 C CNN
+F 3 "" H 5000 2000 50  0001 C CNN
+	1    5000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 6025E84A
+P 5000 2750
+F 0 "#PWR03" H 5000 2500 50  0001 C CNN
+F 1 "GND" H 5005 2577 50  0000 C CNN
+F 2 "" H 5000 2750 50  0001 C CNN
+F 3 "" H 5000 2750 50  0001 C CNN
+	1    5000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2000 4600 2000
+Wire Wire Line
+	4600 2750 5000 2750
+$Comp
+L Raspberry_Pi_Pico:Pico U1
+U 1 1 6025A432
+P 3750 1400
+F 0 "U1" H 3750 -2289 50  0000 C CNN
+F 1 "Pico" H 3750 -2380 50  0000 C CNN
+F 2 "Raspberry_Pi_Pico:RPi-Pico-SMT" H 4050 1400 50  0001 C CNN
+F 3 "https://datasheets.raspberrypi.org/pico/pico-datasheet.pdf" H 4050 1400 50  0001 C CNN
+	1    3750 1400
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3600 5000
+NoConn ~ 3750 5000
+NoConn ~ 3900 5000
+NoConn ~ 4600 4550
+NoConn ~ 4600 4400
+NoConn ~ 4600 4100
+NoConn ~ 4600 3950
+NoConn ~ 4600 3800
+NoConn ~ 4600 3650
+NoConn ~ 4600 3350
+NoConn ~ 4600 3200
+NoConn ~ 4600 3050
+NoConn ~ 4600 2900
+NoConn ~ 4600 2600
+NoConn ~ 4600 2450
+NoConn ~ 4600 2300
+NoConn ~ 4600 2150
+NoConn ~ 4600 1850
+NoConn ~ 2900 1700
+NoConn ~ 2900 1850
+NoConn ~ 2900 2150
+NoConn ~ 2900 2300
+NoConn ~ 2900 2450
+NoConn ~ 2900 2600
+NoConn ~ 2900 2900
+NoConn ~ 2900 3050
+NoConn ~ 2900 3200
+NoConn ~ 2900 3350
+NoConn ~ 2900 3650
+NoConn ~ 2900 3800
+NoConn ~ 2900 3950
+NoConn ~ 2900 4100
+NoConn ~ 2900 4400
+NoConn ~ 2900 4550
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 6026269F
+P 6550 2000
+F 0 "J1" H 6468 1675 50  0000 C CNN
+F 1 "Conn_01x02" H 6468 1766 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6550 2000 50  0001 C CNN
+F 3 "~" H 6550 2000 50  0001 C CNN
+	1    6550 2000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 60262FCF
+P 6250 2100
+F 0 "#PWR05" H 6250 1850 50  0001 C CNN
+F 1 "GND" H 6255 1927 50  0000 C CNN
+F 2 "" H 6250 2100 50  0001 C CNN
+F 3 "" H 6250 2100 50  0001 C CNN
+	1    6250 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 60263523
+P 6250 1800
+F 0 "#PWR04" H 6250 1650 50  0001 C CNN
+F 1 "+5V" H 6265 1973 50  0000 C CNN
+F 2 "" H 6250 1800 50  0001 C CNN
+F 3 "" H 6250 1800 50  0001 C CNN
+	1    6250 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 1800 6250 1900
+Wire Wire Line
+	6250 1900 6350 1900
+Wire Wire Line
+	6350 2000 6250 2000
+Wire Wire Line
+	6250 2000 6250 2100
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 60264164
+P 6250 1900
+F 0 "#FLG0101" H 6250 1975 50  0001 C CNN
+F 1 "PWR_FLAG" V 6250 2027 50  0000 L CNN
+F 2 "" H 6250 1900 50  0001 C CNN
+F 3 "~" H 6250 1900 50  0001 C CNN
+	1    6250 1900
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6250 1900
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60264F35
+P 6250 2000
+F 0 "#FLG0102" H 6250 2075 50  0001 C CNN
+F 1 "PWR_FLAG" V 6250 2127 50  0000 L CNN
+F 2 "" H 6250 2000 50  0001 C CNN
+F 3 "~" H 6250 2000 50  0001 C CNN
+	1    6250 2000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6250 2000
+$Comp
+L power:GND #PWR?
+U 1 1 6026E3BD
+P 4750 4750
+F 0 "#PWR?" H 4750 4500 50  0001 C CNN
+F 1 "GND" H 4755 4577 50  0000 C CNN
+F 2 "" H 4750 4750 50  0001 C CNN
+F 3 "" H 4750 4750 50  0001 C CNN
+	1    4750 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 4750 4750 4250
+Wire Wire Line
+	4750 4250 4600 4250
+Wire Wire Line
+	4600 3500 4750 3500
+Wire Wire Line
+	4750 3500 4750 4250
+Connection ~ 4750 4250
+$Comp
+L power:GND #PWR?
+U 1 1 6026F052
+P 2700 4800
+F 0 "#PWR?" H 2700 4550 50  0001 C CNN
+F 1 "GND" H 2705 4627 50  0000 C CNN
+F 2 "" H 2700 4800 50  0001 C CNN
+F 3 "" H 2700 4800 50  0001 C CNN
+	1    2700 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4250 2700 4250
+Wire Wire Line
+	2700 4250 2700 4800
+Wire Wire Line
+	2700 4250 2700 3500
+Wire Wire Line
+	2700 3500 2900 3500
+Connection ~ 2700 4250
+Wire Wire Line
+	2700 3500 2700 2750
+Wire Wire Line
+	2700 2750 2900 2750
+Connection ~ 2700 3500
+Wire Wire Line
+	2900 2000 2700 2000
+Wire Wire Line
+	2700 2000 2700 2750
+Connection ~ 2700 2750
 $EndSCHEMATC

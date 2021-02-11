@@ -1,2 +1,6 @@
 *.bck
+*-bak
+fp-info-cache
+*-cache.lib
+
 Pico.sym
